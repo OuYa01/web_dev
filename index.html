@@ -1,77 +1,140 @@
 <!DOCTYPE html>
-<!-- this is should be in every page in first line-->
+<!-- This should be in the first line of every HTML page -->
 <html lang="en">
-  <!-- lang if to set a language for this page -->
+  <!-- The 'lang' attribute specifies the language of the page -->
+
   <head>
-    <meta charset="UTF-8" >
-    <meta name="author" content="Oussama laamri" >
-    <meta name="description" content="this page its just for learn for now" >
-    <!-- title of page -->
+    <meta charset="UTF-8" />
+    <meta name="author" content="Oussama Laamri" />
+    <meta name="description" content="This page is just for learning purposes" />
+    <!-- Page title -->
     <title>My First Website</title>
-    <!--  -->
-    <link rel="icon" href="html5.png" type="image/x-icon" >
-    <link rel="stylesheet" href="main.css" type="text/css" >
+    <!-- Favicon and stylesheet links -->
+    <link rel="icon" href="/images/html5.png" type="image/x-icon" />
+    <link rel="stylesheet" href="main.css" type="text/css" />
   </head>
 
   <body>
+    <!-- Main heading -->
     <h1>Learn</h1>
 
-    <hr>
+    <hr />
 
-    <h2>Iam ready to learn HTML5</h2>
-    <p>This is my first web page</p>
+    <!-- Subheading and paragraph content -->
+    <h2>I am ready to learn HTML5</h2>
+    <p>This is my first web page.</p>
 
-    <h3>My daily Schedule</h3>
-    <p>let me tell you how:</p>
-    <!-- Ordered html list start with <ol>, each Item start with <li> -->
-      <ol>
-	<li>...I learn more about web ev.</li>
-	<li>...I plan out my schedule.</li>
-	<li>...I use resources from
-		<abbr title="Mozila Developer Network">
-			<a href="https://developer.mozilla.org/en-US/">MDN</a></abbr>.
-	</li>
-      </ol>
+    <!-- Image with alt text, title, and specified dimensions -->
+    <img
+      src="images/html5.png"
+      alt="HTML5 Logo"
+      title="I am learning HTML5"
+      width="300"
+      height="300"
+    />
 
-    <hr>
+    <!-- Ordered list: daily schedule -->
+    <h3>My Daily Schedule</h3>
+    <p>Let me tell you how:</p>
+    <ol>
+      <li>I learn more about web development.</li>
+      <li>I plan out my schedule.</li>
+      <li>
+        I use resources from
+        <abbr title="Mozilla Developer Network">
+          <a href="https://developer.mozilla.org/en-US/" target="_blank">MDN</a>
+        </abbr>
+        .
+      </li>
+    </ol>
 
-    <h2>why i learn html</h2>
-    <p>bcs we study it in our second year of cs</p>
-    <h3>what i love about cs</h3>
-    <p>I love :</p>
-    <!-- Unordered List-->
+    <hr />
+
+    <!-- Another section: Why learn HTML -->
+    <h2>Why I Learn HTML</h2>
+
+    <!-- Figure with an image and caption -->
+    <figure>
+      <img
+        src="images/code.png"
+        alt="C Language Code"
+        title="This code is about C language"
+        width="1080"
+        height="450"
+        loading="lazy"
+      />
+      <figcaption>Code C Image</figcaption>
+    </figure>
+
+    <p>Because we study it in our second year of computer science.</p>
+
+    <!-- Subsection: What I love about computer science -->
+    <h3>What I Love About CS</h3>
+    <p>I love:</p>
     <ul>
-	    <li>...using the logic in 
-		    <abbr title="computer science">cs</abbr>
-		    and how we think aabout problemes</li>
-	<li>...i love how we made complex things into simple things</li>
+      <li>
+        Using logic in
+        <abbr title="Computer Science">CS</abbr>
+        and how we think about solving problems.
+      </li>
+      <li>I love how we simplify complex things.</li>
     </ul>
 
-    <hr>
+    <hr />
 
-    <!-- defines the contact information -->
-    <address>Agadir<br>Morroco</address>
-    &lt;&lt;&lt; &copy; <a href="about.html">Oussama laamri</a> &gt;&gt;&gt;
+    <!-- Contact information -->
+    <address>Agadir, Morocco</address>
+    <p>&lt;&lt;&lt; &copy; <a href="about.html">Oussama Laamri</a> &gt;&gt;&gt;</p>
 
-    <hr>
+    <hr />
 
-    <h2>whats i will learn after html</h2>
-    <p>i will learn after html, css, js and php</p>
-    <h3>why?</h3>
+    <!-- Future learning section -->
+    <h2>What I Will Learn After HTML</h2>
 
-    <!-- description list i a list of terms with description for each term -->
+    <!-- Code example figure -->
+    <figure>
+      <figcaption>How to Sum Two Numbers in C</figcaption>
+      <p>
+        <code>
+          int sum(int a, int b) { <br />
+          return (a + b); <br />
+          }
+        </code>
+      </p>
+    </figure>
+
+    <p>After HTML, I will learn CSS, JavaScript, and PHP.</p>
+
+    <h3>Why?</h3>
+
+    <!-- Description list: Learning objectives for future technologies -->
     <dl>
-	    <dt>Css</dt>
-	    <dd>bcs i want to make my page look good by make amazing design for it</dd>
-	    <dt>Js</dt>
-	    <dd>i will learn it to add more things for my page</dd>
+      <dt>CSS</dt>
+      <dd>Because I want to make my page look good by designing it beautifully.</dd>
 
-	    <dt>php</dt>
-	    <dd>I will learn it to make good abckend for my website</dd>
+      <dt>JavaScript (JS)</dt>
+      <dd>I will learn it to add interactivity to my page.</dd>
+
+      <dt>PHP</dt>
+      <dd>I'll learn it to build a solid backend for my website.</dd>
     </dl>
-    <a href="#">back to top</a>
 
+    <!-- Another figure with an image and caption -->
+    <figure>
+      <img
+        src="images/scan_me.jpg"
+        alt="Join Us Image"
+        title="Join us"
+        width="491"
+        loading="lazy"
+      />
+      <figcaption>Join Us Image</figcaption>
+    </figure>
 
+    <!-- Back to top link -->
+    <br />
+    <a href="#">Back to top</a>
 
+    <hr />
   </body>
 </html>
