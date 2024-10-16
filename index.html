@@ -3,10 +3,13 @@
 <html lang="en">
   <!-- The 'lang' attribute specifies the language of the page -->
 
-  <head>
+  <head >
     <meta charset="UTF-8" />
     <meta name="author" content="Oussama Laamri" />
-    <meta name="description" content="This page is just for learning purposes" />
+    <meta
+      name="description"
+      content="This page is just for learning purposes"
+    />
     <!-- Page title -->
     <title>My First Website</title>
     <!-- Favicon and stylesheet links -->
@@ -15,126 +18,162 @@
   </head>
 
   <body>
-    <!-- Main heading -->
-    <h1>Learn</h1>
+    <header>
+      Main heading
 
+      <h1>My goal of this month is</h1>
+      <nav>
+        <p>Lean html</p>
+        <p>learn shell commands</p>
+        <p>learn probabilty</p>
+      </nav>
+    </header>
     <hr />
 
-    <!-- Subheading and paragraph content -->
-    <h2>I am ready to learn HTML5</h2>
-    <p>This is my first web page.</p>
+    <main>
+      <article id="html">
+        <section id="html">
+          <!-- Subheading and paragraph content -->
+          <h2>I am ready to learn HTML5</h2>
+          <p>This is my first web page.</p>
 
-    <!-- Image with alt text, title, and specified dimensions -->
-    <img
-      src="images/html5.png"
-      alt="HTML5 Logo"
-      title="I am learning HTML5"
-      width="300"
-      height="300"
-    />
+          <!-- Image with alt text, title, and specified dimensions -->
+          <img
+            src="images/html_logo_300x300.png"
+            alt="HTML5 Logo"
+            title="I am learning HTML5"
+            width="300"
+            height="300"
+          />
 
-    <!-- Ordered list: daily schedule -->
-    <h3>My Daily Schedule</h3>
-    <p>Let me tell you how:</p>
-    <ol>
-      <li>I learn more about web development.</li>
-      <li>I plan out my schedule.</li>
-      <li>
-        I use resources from
-        <abbr title="Mozilla Developer Network">
-          <a href="https://developer.mozilla.org/en-US/" target="_blank">MDN</a>
-        </abbr>
-        .
-      </li>
-    </ol>
+          <!-- Ordered list: daily schedule -->
+        </section >
 
-    <hr />
+        <section id="schedule">
+          <h3>My Daily Schedule</h3>
 
-    <!-- Another section: Why learn HTML -->
-    <h2>Why I Learn HTML</h2>
+          <aside>
+            <details>
+              <summary>how many hours i study per day?</summary>
+              <p>i study 3h per day, 1 in the morning and 2 in evening</p>
+            </details>
+          </aside>
 
-    <!-- Figure with an image and caption -->
-    <figure>
-      <img
-        src="images/code.png"
-        alt="C Language Code"
-        title="This code is about C language"
-        width="1080"
-        height="450"
-        loading="lazy"
-      />
-      <figcaption>Code C Image</figcaption>
-    </figure>
+          <p>Let me tell you how:</p>
+          <ol>
+            <li>I learn more about web development.</li>
+            <li>I plan out my schedule.</li>
+            <li>
+              I use resources from
+              <abbr title="Mozilla Developer Network">
+                <a href="https://developer.mozilla.org/en-US/" target="_blank"
+                  >MDN</a
+                >
+              </abbr>
+              .
+            </li>
+          </ol>
 
-    <p>Because we study it in our second year of computer science.</p>
+          <hr />
+        </section>
 
-    <!-- Subsection: What I love about computer science -->
-    <h3>What I Love About CS</h3>
-    <p>I love:</p>
-    <ul>
-      <li>
-        Using logic in
-        <abbr title="Computer Science">CS</abbr>
-        and how we think about solving problems.
-      </li>
-      <li>I love how we simplify complex things.</li>
-    </ul>
+        <section id="why">
+          <!-- Another section: Why learn HTML -->
+          <h2>Why I Learn HTML</h2>
 
-    <hr />
+          <!-- Figure with an image and caption -->
+          <figure>
+            <img
+              src="images/c.png"
+              alt="C Language Code"
+              title="This code is about C language"
+              style="width: 611px; height: 366px"
+              loading="lazy"
+            />
+            <figcaption>Code C Image</figcaption>
+          </figure>
 
-    <!-- Contact information -->
-    <address>Agadir, Morocco</address>
-    <p>&lt;&lt;&lt; &copy; <a href="about.html">Oussama Laamri</a> &gt;&gt;&gt;</p>
+          <p>Because we study it in our second year of computer science.</p>
+        </section>
+      </article>
 
-    <hr />
+      <article id="cs">
+        <!-- Subsection: What I love about computer science -->
+        <h3>What I Love About CS</h3>
+        <p>I love:</p>
+        <ul>
+          <li>
+            Using logic in
+            <abbr title="Computer Science">CS</abbr>
+            and how we think about solving problems.
+          </li>
+          <li>I love how we simplify complex things.</li>
+        </ul>
 
-    <!-- Future learning section -->
-    <h2>What I Will Learn After HTML</h2>
+        <hr />
 
-    <!-- Code example figure -->
-    <figure>
-      <figcaption>How to Sum Two Numbers in C</figcaption>
-      <p>
-        <code>
-          int sum(int a, int b) { <br />
-          return (a + b); <br />
-          }
-        </code>
-      </p>
-    </figure>
+        <!-- Future learning section -->
+        <h2>What I Will Learn After HTML</h2>
 
-    <p>After HTML, I will learn CSS, JavaScript, and PHP.</p>
+        <!-- Code example figure -->
+        <figure>
+          <figcaption>How to Sum Two Numbers in C</figcaption>
+          <p>
+            <code>
+              int sum(int a, int b) { <br />
+              return (a + b); <br />
+              }
+            </code>
+          </p>
+        </figure>
 
-    <h3>Why?</h3>
+        <p>After HTML, I will learn CSS, JavaScript, and PHP.</p>
 
-    <!-- Description list: Learning objectives for future technologies -->
-    <dl>
-      <dt>CSS</dt>
-      <dd>Because I want to make my page look good by designing it beautifully.</dd>
+        <h3 id="why">Why?</h3>
 
-      <dt>JavaScript (JS)</dt>
-      <dd>I will learn it to add interactivity to my page.</dd>
+        <!-- Description list: Learning objectives for future technologies -->
+        <dl>
+          <dt>CSS</dt>
+          <dd>
+            Because I want to make my page look good by designing it
+            beautifully.
+          </dd>
 
-      <dt>PHP</dt>
-      <dd>I'll learn it to build a solid backend for my website.</dd>
-    </dl>
+          <dt>JavaScript (JS)</dt>
+          <dd>I will learn it to add interactivity to my page.</dd>
 
-    <!-- Another figure with an image and caption -->
-    <figure>
-      <img
-        src="images/scan_me.jpg"
-        alt="Join Us Image"
-        title="Join us"
-        width="491"
-        loading="lazy"
-      />
-      <figcaption>Join Us Image</figcaption>
-    </figure>
+          <dt>PHP</dt>
+          <dd>I'll learn it to build a solid backend for my website.</dd>
+        </dl>
+
+        <!-- Another figure with an image and caption -->
+        <figure>
+          <img
+            src="images/scan_me.jpg"
+            alt="Join Us Image"
+            title="Join us"
+            width="491"
+            loading="lazy"
+          />
+          <figcaption>Join Us Image</figcaption>
+        </figure>
+      </article>
+    </main>
 
     <!-- Back to top link -->
     <br />
-    <a href="#">Back to top</a>
-
     <hr />
+
+    <footer>
+      <!-- Contact information -->
+      <address>Agadir, Morocco</address>
+      <p>
+        &lt;&lt;&lt; &copy; <a href="about.html">Oussama Laamri</a> &gt;&gt;&gt;
+      </p>
+
+      <a href="#">Back to top</a>
+
+      <hr />
+    </footer>
   </body>
 </html>
