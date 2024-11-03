@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+
+<head>
+    <title>CatPhotoApp</title>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <!--main is used to represent the main content of the body of an html doc-->
+    <main>
+        <h1>CatPhotoApp</h1>
+        <section>
+            <h2>Cat Photos</h2>
+            <p>
+                
+                Everyone loves
+                <a href="https://cdn.freecodecamp.org/curriculum/cat-photo-app/running-cats.jpg">
+                    cute cats
+                </a>
+                online!
+            </p>
+            <!--<a>: anchor element to add a link, href: is attributes to add link-->
+            <p>
+                See more 
+                <a target="_blank" href="https://freecatphotoapp.com">cat photos</a>
+                in our gallery.
+            </p>
+            <a href="https://freecatphotoapp.com">
+            <!--img: is used to add an image-->
+            <!--src: is and attribute to add url of image-->
+            <!--alt: is used for screen readers, is disaplayed if image fails to load-->
+            <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg"
+                alt="A cute orange cat lying on its back">
+            </a>
+        </section>
+
+        <section>
+            <h2>Cat Lists</h2>
+
+            <h3>Things that cat love:</h3>
+                <!-- ! unordered list -->
+                <ul>
+                    <!--?? <li> element used to creat a list item un OL or UL-->
+                    <li>cat nip</li>
+                    <li>laser pointers</li>
+                    <li>lasagna</li>
+                </ul>
+                <!--
+                    !<figure> : tag semantic, can includee varios types of media like (images, diagrams, code ...)
+                    !<figcaption>: used to add a caption to describe the image
+                    <em>: emphasizes the meaning of the content
+                -->
+                <figure>
+                    <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/lasagna.jpg" alt="A slice of lasagna on a plate.">
+                    <figcaption>Cats <em>love</em> lasagna.</figcaption>
+                </figure>
+            <h3>Top 3 things cats hate:</h3>
+                <!--Ordered List-->
+                <ol>
+                    <li>flea treatment</li>
+                    <li>thunder</li>
+                    <li>other cats</li>
+                </ol>
+                <figure>
+                    <img
+                        src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/cats.jpg"
+                        alt="Five cats looking around a field">
+                    <!--!<Strong>: element is used to indicate that some text is of strong Importance or URGENT-->
+                    <figcaption>Cats <strong>hate</strong> other cats.</figcaption>
+                </figure>
+            <h3>Top 3 type of cats</h3>
+                <!-- description list -->
+                <dl>
+                    <dt>Maine Coon</dt>
+                    <dd>
+                        <p>
+                            The Maine Coon is one of the largest domestic cat breeds, known for its friendly
+                            and playful nature. These cats have a long, thick, and water-resistant coat with a bushy tail
+                            , often compared to that of a raccoon. Their fur helps them withstand cold climates. Maine Coons
+                            are intelligent, gentle, and tend to be very affectionate with their families, making them excellent pets
+                            for children and other animals.
+                        </p>
+                    </dd>
+                    <dt>Siamese</dt>
+                    <dd>
+                        <p>
+                            Siamese cats are famous for their sleek, slender bodies, striking blue almond-shaped eyes, and short,
+                            fine coat. They often have color points on their ears, face, paws, and tail, which come in various shades
+                            like seal, blue, and chocolate. Siamese cats are highly vocal and affectionate, known for their loyalty and
+                            intelligence. They form strong bonds with their owners and are often described as "dog-like" due to their eagerness
+                             to interact and play.
+                        </p>
+                    </dd>
+                    <dt>British Shorthair</dt>
+                    <dd>
+                        <p>
+                            British Shorthairs are known for their round faces, stocky build, and dense, plush coat, often in shades of blue-gray
+                            (though other colors and patterns are possible). They have a calm and independent demeanor, making them less needy than
+                            some other breeds. British Shorthairs are affectionate but not overly clingy, often preferring a quiet presence alongside
+                            their owners. Their easygoing nature and low maintenance coat make them a popular choice for families and those with busy lifestyles.
+                        </p>
+                    </dd>
+                </dl>
+
+                <figure>
+                    <img src="https://images.unsplash.com/photo-1532386236358-a33d8a9434e3?q=80&w=1987&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="cats" width="400px">
+                    <figcaption>cats</figcaption>
+                </figure>
+
+        </section>
+
+        <section>
+            <h2>Cat Form</h2>
+            <!-- 
+                !<form>: is used to get information from a user like (name, email...) 
+                attributes: action attribute -  where data should be sent
+            -->
+            <form action="https://freecatphotoapp.com/submit-cat-photo">
+                <!--
+                    <fieldset> - The fieldset element is used to group related inputs and labels together in a web form.
+                    fieldset elements are block-level elements, meaning that they appear on a new line.
+                -->
+                <fieldset>
+                    <legend>Is your cat an indoor or outdoor cat?</legend>
+                    <!-- 
+                        type="radio" - radio buttons for questions where you want only one answer out of multiple options
+                                        u should give them the same name
+                        value attribute - is used in HTML form elements to specify the data that will be sent to the server
+                    -->
+                    <label><input type="radio" id="indoor" name="indoor-outdoor" value="indoor" checked>Indoor</label>
+                    <label><input type="radio" id="outdoor" name="indoor-outdoor" value="outdoor">Outdoor</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>What's your cat's personality?</legend>
+                    <!--  
+                        another way to associate an input element's text with the element itself.
+                        You can nest the text within a label element and add a for attribute with the same value
+                        as the input element's id attribute.
+
+                        checked: checkebox or radio button selected by default, you need to add the checked attribute to it.
+                    -->
+                    <input id="loving" type="checkbox" name="personality" value="loving" checked> <label for="loving">Loving</label> 
+                    <input id="lazy" type="checkbox" name="personality" value="lazy"> <label for="lazy">Lazy</label>
+                    <input id="energetic" type="checkbox" name="personality" value="energetic"> <label for="energetic">Energetic</label>
+                </fieldset>
+                <!--
+                    !<input>: allows several way to collect data
+                    attributes: type - type of input(text, password,radio ...),
+                                name - to give it a name
+                                placeholder - a text is used to give user a hint about what kind of info to enter
+                -->
+                <input type="text" name="catphotourl" placeholder="cat photo url" required>
+                <!-- 
+                    <button> : to creat clikcable button
+                    attributes: type - type of button ("submit", "reset" ...)        
+                -->
+                <button type="submit" >submit</button>
+            </form>
+        </section>
+
+        
+
+    </main>
+
+    <!-- 
+        element represents a footer for its nearest ancestor sectioning content or sectioning root element.
+        A <footer> typically contains information about the author of the section, copyright data or links to related documents.
+    -->
+    <footer>
+        <p>No Copyright - OUYA</p>
+    </footer>
+</body>
