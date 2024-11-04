@@ -1,0 +1,33 @@
+body {
+    background-image: url(nathan-dumlao-zTZRZV86GhE-unsplash\ \(1\).jpg);
+}
+/* element Selector, bcs we select by element*/
+h1, h2, p {
+    /*property: value;*/
+    text-align: center;
+}
+/* The id selector uses the id attribute of an HTML element to select a specific element use #name
+#menu {
+    width: 80%;
+    background-color: burlywood;
+    margin-left: auto;
+    margin-right: auto;
+} */
+
+/* class Selector */
+.menu {
+    width: 80%;
+    background-color: burlywood;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* 
+h2 {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+} 
+*/
