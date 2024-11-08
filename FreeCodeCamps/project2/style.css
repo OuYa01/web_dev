@@ -6,6 +6,7 @@ h1, h2, p {
     /*property: value;*/
     text-align: center;
 }
+
 /* The id selector uses the id attribute of an HTML element to select a specific element use #name
 #menu {
     width: 80%;
