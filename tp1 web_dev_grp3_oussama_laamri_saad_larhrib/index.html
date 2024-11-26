@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doc</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+
+
+    
+    <form action="">
+        <fieldset>Commande de restaruant</fieldset>
+        <div class="menu">
+            <label for="entree">entree:</label>
+            <select name="entree" id="entree" value="entree" onchange="choosePlat('entree', 'nb1')">
+                <option disabled selected value>--Entree--</option>
+                <option value="salad">salad marocain 20Dh</option>
+                <option value="tortilla">Tortilla 20Dh</option>
+                <option value="harira">harira 20h</option>
+                <option value="aucun">aucun</option>
+
+            </select>
+
+            <label for="nbp" class="">Nombre de personnes:</label>
+            <input  type="number" id="nb1" name="nbp" min="0" value="0">
+
+            <label for="entree">Plat principal:</label>
+            <select name="entree" id="principal" value="entree" onchange="choosePlat('principal', 'nb2')">
+                <option disabled selected value>--Entree--</option>
+                <option value="djaj">dajaj m7mr 80Dh</option>
+                <option value="rfisa">rfisa 70Dh</option>
+                <option value="bstila">bistila bdjaj 150Dh</option>
+                <option value="hrgma">hrgma 70Dh</option>
+                <option value="aucun">aucun</option>
+            </select>
+
+            <label for="nbp">Nombre de personnes:</label>
+            <input type="number" id="nb2"name="nbp" min="0" value="0">
+        
+            <label for="entree">Desert:</label>
+            <select name="entree" id="desert" value="entree" onchange="choosePlat('desert', 'nb3')">
+                <option disabled selected value>--Entree--</option>
+                <option value="cake">cake sucre 20Dh</option>
+                <option value="gateu">gateu 15Dh</option>
+                <option value="mousse">Mousse dessert 40Dh</option>
+                <option value="tiramisu">Tiramisu 40Dh</option>
+                <option value="aucun">aucun</option>
+            </select>
+
+            <label for="nbp">Nombre de personnes:</label>
+            <input type="number" id="nb3" name="nbp" min="0" value="0">
+            <br>
+            <button type="button" onclick="Facture()">Commander</button>
+        </div>
+        
+    <br>
+    <div id="facture-container">
+
+    </div>
+
+    </form>
+
+
+    <script src="script.js"></script>
+    
+</body>
+</html>

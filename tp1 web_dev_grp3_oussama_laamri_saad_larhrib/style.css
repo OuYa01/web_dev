@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+body {
+    font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+form {
+    width: 500px;
+    margin: 0 auto;
+    background-color: #D4EBF8;
+    border: black solid 2px;
+    height: 345px;
+}
+fieldset {
+    text-align: center;
+    background-color: #0A3981;
+    color: white;
+    border: 10px;
+    width:476px;
+    margin: 0 auto;
+}
+label,
+select,
+input {
+    display: block;
+}
+
+
+
+select {
+    width:480px;
+}
+
+input {
+    width: 480px;
+}
+
+
+.menu {
+    width: 480px;
+    margin: 0 auto;
+}
+
+
+button {
+    border: 10px;
+    background-color: #0A3981;
+    color: white;
+    height: 30px;
+    border-radius: 5px;
+
+}
+
+button:hover{
+    background-color: #1F509A;
+    cursor: pointer;
+}
+
+#facture-container {
+    margin-top: 30px;
+    background-color: #efefef;
+    border: black;
+}
