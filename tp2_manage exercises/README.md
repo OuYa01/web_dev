@@ -17,7 +17,7 @@ A simple PHP-based system to manage exercises. This project allows users to **ad
 
 ## Project Demo
 
-[![Project Demo](https://vumbnail.com/1035388823.jpg)](https://vimeo.com/1035388823/9d6853644f?share=copy)
+[![Project Demo](images/image.png)](https://vimeo.com/1035388823/9d6853644f?share=copy)
 
 ## Installation
 
