@@ -18,10 +18,10 @@
                                     <td><?php echo $row['auteur'];?></td>
                                     <td><?php echo $row['date_creation'];?></td>
                                     <td>
-                                        <a href="db/modify.php?id=<?php echo $row['id']?>" class="modify_btn">modifier</a>
+                                        <a href="backend/modify.php?id=<?php echo $row['id']?>" class="modify_btn">modifier</a>
                                     </td>
                                     <td>
-                                        <a href="db/delete.php?id=<?php echo $row['id']?>" class="delet_btn" onclick="return confirm('Are you sure you want to delete this exercise')">delete</a>
+                                        <a href="backend/delete.php?id=<?php echo $row['id']?>" class="delet_btn" onclick="return confirm('Are you sure you want to delete this exercise')">delete</a>
                                     </td>
                                 </tr>
                             <?php endwhile; ?>

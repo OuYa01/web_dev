@@ -16,11 +16,11 @@
 
         if ($stmt->execute())
         {
-            $succ_msg = "Lexercice a ete ajouter avec succ!";
+            $successMessage = "Lexercice a ete ajouter avec succ!";
         }
         else
         {
-            $error_msg = "Error lors l'ajouter de l'exercice (:" . $stmt->error;
+            $errorMessage = "Error lors l'ajouter de l'exercice (:" . $stmt->error;
         }
 
         $stmt->close();

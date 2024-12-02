@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <?php
-include('db/ajouter.php');
+include('backend/ajouter.php');
 ?>
 <html>
 
     <head>
         <title>exercices</title>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="frontend/style.css">
     </head>
 
     <body>
@@ -31,7 +31,7 @@ include('db/ajouter.php');
         </form>
 
         <?php 
-            include ('db/table.php');
+            include ('frontend/table.php');
         ?>
         
     </body>
