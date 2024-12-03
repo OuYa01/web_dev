@@ -26,7 +26,7 @@ A simple PHP-based system to manage exercises. This project allows users to **ad
 clone the repository to your local machine:
 
 ```bash
-git clone https://github.com/your-username/exercise-management.git
+git clone https://github.com/OuYa01/web_dev/tree/main/tp2_manage%20exercises
 ```
 
 ### 2. Set Up the Database
